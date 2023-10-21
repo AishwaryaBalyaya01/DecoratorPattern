@@ -7,12 +7,12 @@ public class CaramelAddOn extends AddOnDecorator{
 
     @Override
     public int cost() {
-
-        return beverage.cost() + 3;
+        int cost = beverage.cost() + 3;
+        return cost;
     }
 
     @Override
     public String getDescription() {
-        return "Caramel is added to " +beverage.getDescription()+" & total cost is: "+cost();
+        return "Caramel, " +beverage.getDescription();
     }
 }

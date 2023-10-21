@@ -5,11 +5,12 @@ public class MochaAddOn extends AddOnDecorator{
     }
     @Override
     public int cost() {
-        return beverage.cost() + 5;
+        int cost = beverage.cost() + 5;
+        return cost;
     }
 
     @Override
     public String getDescription() {
-        return "Mocha is added to "+beverage.getDescription()+" & total cost is: "+cost();
+        return "Mocha, "+beverage.getDescription();
     }
 }
